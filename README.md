@@ -28,7 +28,7 @@
 Следуйте этим простым шагам, чтобы запустить проект локально:
 
 1. Клонируйте репозиторий
-  ```git clone https://github.com/ваш_пользователь/ваш_репозиторий.git```
+  ```git clone https://github.com/BenchPressBoss/Sport-School.git```
    
 2. Переход в папку проекта 
   ```cd Sport-School```
