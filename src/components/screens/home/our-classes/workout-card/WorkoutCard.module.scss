@@ -15,6 +15,8 @@ div {
 		width: 360px;
 		height: 250px;
 		border-radius: 15px 15px 0 0;
+		filter: grayscale(100%);
+		transition: filter 0.3s ease-in-out;
 	}
 
 	> h3 {
@@ -32,11 +34,17 @@ div {
 
 	> span {
 		position: absolute;
-		margin-left: 240px;
-		margin-top: 280px;
+		margin-left: 225px;
+		margin-top: 270px;
 		font-size: 7rem;
 		font-weight: bold;
 		color: rgba(255, 255, 255, 0.1);
 		z-index: 2;
+	}
+}
+
+div:hover {
+	> img {
+		filter: grayscale(0%);
 	}
 }
