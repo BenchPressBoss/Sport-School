@@ -1,0 +1,50 @@
+@import '@styles/variables';
+
+div {
+	width: 360px;
+	height: 400px;
+	background-color: $bg-darkblue;
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px rgba(153, 153, 153, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+
+	> img {
+		width: 360px;
+		height: 250px;
+		border-radius: 15px 15px 0 0;
+		filter: grayscale(100%);
+		transition: filter 0.3s ease-in-out;
+	}
+
+	> h3 {
+		color: $text-white;
+		padding: 30px 0 0 30px;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	> p {
+		color: $description-gray;
+		font-size: 17px;
+		padding: 15px 30px 30px 30px;
+	}
+
+	> span {
+		position: absolute;
+		margin-left: 225px;
+		margin-top: 270px;
+		font-size: 7rem;
+		font-weight: bold;
+		color: rgba(255, 255, 255, 0.1);
+		z-index: 2;
+	}
+}
+
+div:hover {
+	> img {
+		filter: grayscale(0%);
+	}
+}
