@@ -1,0 +1,13 @@
+@import '@styles/variables';
+
+.layout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+
+	.wrapper {
+		width: 1270px;
+	}
+}

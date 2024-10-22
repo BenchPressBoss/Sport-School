@@ -1,14 +1,16 @@
+import { PropsWithChildren } from 'react'
+
+import styles from './Layout.module.scss'
 import Header from './header/Header'
 
-type layoutTypes = {
-	children: React.ReactNode
-}
-function Layout({ children }: layoutTypes) {
+function Layout({ children }: PropsWithChildren) {
 	return (
-		<>
-			<Header />
-			{children}
-		</>
+		<div className={styles.layout}>
+			<div className={styles.wrapper}>
+				<Header />
+				<main>{children}</main>
+			</div>
+		</div>
 	)
 }
 

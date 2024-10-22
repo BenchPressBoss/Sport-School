@@ -1,6 +1,8 @@
 @import '@styles/variables';
 
 a {
+	display: flex;
+	align-items: center;
 	color: $text-white;
 	cursor: pointer;
 	transition: color 0.2s ease-in-out;

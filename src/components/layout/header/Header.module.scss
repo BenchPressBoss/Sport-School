@@ -1,6 +1,23 @@
+@import '@styles/variables';
+
 header {
 	display: flex;
 	justify-content: space-between;
-	flex-direction: row;
-	width: 1200px;
+	width: 100%;
+	padding: 50px 0;
+
+	h1 {
+		font-size: 40px;
+		color: $text-white;
+
+		> span {
+			color: $btn-orange;
+		}
+	}
+	nav {
+		display: flex;
+		font-size: 17px;
+		font-weight: 400;
+		gap: 30px;
+	}
 }
