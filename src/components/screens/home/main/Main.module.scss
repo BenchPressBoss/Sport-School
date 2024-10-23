@@ -1,22 +1,29 @@
 @import '@styles/variables';
 
-.bg {
+.wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100vw;
-	height: 80vh;
-	background-image: url('/public/img/HomeBg.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
+	height: 90vh;
 
-	.wrapper {
-		width: 1200px;
+	.homeBg {
+		width: 100vw;
+		height: 90vh;
+		background-image: url('/public/img/HomeBg.jpg');
+		background-position: start start;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
 
+	.info {
+		width: 100%;
+		display: flex;
+		justify-content: start;
+		align-items: start;
+		flex-direction: column;
 		> h1 {
 			color: $text-white;
 			font-size: 60px;
@@ -26,7 +33,7 @@
 		> p {
 			width: 500px;
 			color: $text-white;
-			margin-top: 20px;
+			margin: 25px 0;
 			font-weight: 500;
 			font-size: 17px;
 			line-height: 1.5;
