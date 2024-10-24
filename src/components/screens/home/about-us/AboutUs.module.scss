@@ -3,8 +3,7 @@
 .wrapper {
 	width: 100%;
 	height: 100%;
-	padding: 100px 0;
-	background-color: red;
+	padding: 130px 0;
 
 	h1 {
 		margin-bottom: 20px;
@@ -21,18 +20,20 @@
 		flex-direction: row;
 
 		p {
+			width: 45%;
+			font-size: 17px;
+			color: $description-gray;
+
 			span {
 				font-size: 18px;
 			}
-			width: 45%;
-			color: $description-gray;
 		}
 	}
 
 	form {
 		border-radius: 20px;
 		background-color: $bg-darkblue;
-		box-shadow: 0px 0px 115px rgba(0, 0, 0, 0.8);
+		box-shadow: $shadow-BW;
 		display: flex;
 		flex-direction: column;
 		padding: 40px;

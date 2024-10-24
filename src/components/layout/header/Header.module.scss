@@ -2,23 +2,39 @@
 
 header {
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	padding: 50px 0;
-	width: 1200px;
+	justify-content: center;
+	width: 100vw;
+	padding: 60px 0;
 	position: fixed;
-	h1 {
-		font-size: 40px;
-		color: $text-white;
+	transition: all 0.3s ease;
+	z-index: 2;
 
-		> span {
-			color: $btn-orange;
+	.content {
+		display: flex;
+		justify-content: space-between;
+		width: 1270px;
+
+		h1 {
+			font-size: 40px;
+			color: $text-white;
+
+			> span {
+				color: $btn-orange;
+			}
+		}
+
+		nav {
+			display: flex;
+			font-size: 17px;
+			font-weight: 400;
+			gap: 30px;
 		}
 	}
-	nav {
-		display: flex;
-		font-size: 17px;
-		font-weight: 400;
-		gap: 30px;
+
+	&.scrolled {
+		width: 100vw;
+		position: fixed;
+		padding: 15px 0;
+		background-color: $bg-black;
 	}
 }

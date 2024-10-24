@@ -1,4 +1,4 @@
-import './WorkoutCard.module.scss'
+import styles from './WorkoutCard.module.scss'
 
 type WorkoutCardProps = {
 	title: string
@@ -8,8 +8,8 @@ type WorkoutCardProps = {
 }
 function WorkoutCard({ title, description, image, number }: WorkoutCardProps) {
 	return (
-		<div>
-			<img src={image} alt={title} className='workout-image' />
+		<div className={styles.wrapper}>
+			<img src={image} alt={title} />
 			<h3>{title}</h3>
 			<p>{description}</p>
 			<span className='workout-number'>

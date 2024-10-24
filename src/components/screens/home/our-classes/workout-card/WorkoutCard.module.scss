@@ -1,18 +1,18 @@
 @import '@styles/variables';
 
-div {
-	width: 360px;
+.wrapper {
+	width: 390px;
 	height: 400px;
 	background-color: $bg-darkblue;
 	border-radius: 15px;
-	box-shadow: 10px 10px 10px rgba(153, 153, 153, 0.2);
+	box-shadow: $shadow-BW;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
 	align-items: start;
 
 	> img {
-		width: 360px;
+		width: 390px;
 		height: 250px;
 		border-radius: 15px 15px 0 0;
 		filter: grayscale(100%);
@@ -34,16 +34,16 @@ div {
 
 	> span {
 		position: absolute;
-		margin-left: 225px;
+		margin-left: 245px;
 		margin-top: 270px;
 		font-size: 7rem;
 		font-weight: bold;
-		color: rgba(255, 255, 255, 0.1);
-		z-index: 2;
+		color: rgba(255, 255, 255, 0.05);
+		z-index: 1;
 	}
 }
 
-div:hover {
+.wrapper:hover {
 	> img {
 		filter: grayscale(0%);
 	}

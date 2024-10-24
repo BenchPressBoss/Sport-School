@@ -5,12 +5,14 @@ import Header from './header/Header'
 
 function Layout({ children }: PropsWithChildren) {
 	return (
-		<div className={styles.layout}>
-			<div className={styles.wrapper}>
-				<Header />
-				<main>{children}</main>
+		<>
+			<Header />
+			<div className={styles.layout}>
+				<div className={styles.wrapper}>
+					<main>{children}</main>
+				</div>
 			</div>
-		</div>
+		</>
 	)
 }
 

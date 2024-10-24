@@ -128,3 +128,13 @@ select {
 	border: none;
 	outline: none;
 }
+h1 {
+	font-size: 46px;
+	font-weight: 400;
+	color: $text-white;
+}
+p {
+	color: $description-gray;
+	line-height: 1.5;
+	font-size: 18px;
+}
