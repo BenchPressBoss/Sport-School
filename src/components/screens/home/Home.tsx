@@ -3,6 +3,7 @@ import Layout from '@components/layout/Layout'
 import AboutUs from './about-us/AboutUs'
 import Main from './main/Main'
 import OurClasses from './our-classes/OutClasses'
+import Pricing from './pricing/Pricing'
 import Team from './team/Team'
 
 function Home() {
@@ -13,7 +14,8 @@ function Home() {
 			<Main />
 			<AboutUs />
 			<OurClasses />
-			<Team></Team>
+			<Team />
+			<Pricing />
 		</Layout>
 	)
 }

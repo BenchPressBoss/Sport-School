@@ -5,18 +5,14 @@ import styles from './Team.module.scss'
 import TeamCard from './team-card/TeamCard'
 
 function Team() {
-	const [isLeftSlider, setIsLeftSlider] = useState(true)
-	const sliderContainerRef = useRef(null)
+	const [isLeftSlider, setIsLeftSlider] = useState<boolean>(true)
+	const sliderContainerRef = useRef<HTMLDivElement | null>(null)
+	const slideDistance = 430
 
 	const toggleLeft = () => {
-		if (isLeftSlider) {
-			sliderContainerRef.current.style.transform = 'translateX(-430px)' // сдвиг на 100px
-			setIsLeftSlider(!isLeftSlider)
-		} else {
-			sliderContainerRef.current.style.transform = 'translateX(+430px)' // сдвиг на 100px
-			setIsLeftSlider(!isLeftSlider)
-		}
-		console.log(isLeftSlider)
+		const newTransform = isLeftSlider ? -slideDistance : slideDistance
+		sliderContainerRef.current.style.transform = `translateX(${newTransform}px)`
+		setIsLeftSlider(!isLeftSlider)
 	}
 	return (
 		<div className={styles.wrapper}>
@@ -46,7 +42,7 @@ function Team() {
 				></button>
 				<button
 					className={
-						isLeftSlider ? styles.rightButton : styles.toRightSliderButton
+						!isLeftSlider ? styles.toRightSliderButton : styles.rightButton
 					}
 					onClick={toggleLeft}
 				></button>

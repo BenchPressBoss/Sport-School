@@ -22,7 +22,7 @@ export const TeamDataItems: ITeamData[] = [
 		id: 3,
 		img: 'img/teamJenny.jpg',
 		name: 'Jenny McKinney',
-		category: 'Pilates, coacn'
+		category: 'Pilates, coach'
 	},
 	{
 		id: 4,

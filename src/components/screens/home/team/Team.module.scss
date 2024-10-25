@@ -33,9 +33,9 @@
 		.toRightSliderButton,
 		.toLeftSliderButton {
 			cursor: pointer;
-			width: 15px;
-			height: 15px;
-			border-radius: 15px;
+			width: 12px;
+			height: 12px;
+			border-radius: 10px;
 			background-color: $text-white;
 			transition:
 				width 0.5s ease,
@@ -44,7 +44,7 @@
 
 		.toRightSliderButton,
 		.toLeftSliderButton {
-			width: 40px;
+			width: 30px;
 			background-color: $btn-orange;
 		}
 
