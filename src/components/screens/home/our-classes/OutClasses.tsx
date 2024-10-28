@@ -2,9 +2,9 @@ import { OurClassesData } from './OurClasses.data'
 import styles from './OurClasses.module.scss'
 import WorkoutCard from './workout-card/WorkoutCard'
 
-function OurClasses() {
+function OurClasses({ id }: { id: string }) {
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} id={id}>
 			<h1>Our classes</h1>
 			<p>
 				At Lintense Fitness, we offer a wide range of workouts and classes for

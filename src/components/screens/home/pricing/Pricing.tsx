@@ -3,9 +3,9 @@ import Btn from '@components/ui/btn/Btn'
 import styles from './Pricing.module.scss'
 import { price } from './pricing.data'
 
-function Pricing() {
+function Pricing({ id }: { id: string }) {
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} id={id}>
 			<h1>Select your pricing plan</h1>
 			<p>
 				We offer three varied pricing plans to satisfy the needs of every

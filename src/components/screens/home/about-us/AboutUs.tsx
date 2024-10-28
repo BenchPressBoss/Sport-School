@@ -3,9 +3,9 @@ import Input from '@components/ui/input/Input'
 
 import styles from './AboutUs.module.scss'
 
-function AboutUs() {
+function AboutUs({ id }: { id: string }) {
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} id={id}>
 			<h1>About us</h1>
 			<div className={styles.info}>
 				<p>

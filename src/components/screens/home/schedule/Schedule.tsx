@@ -6,9 +6,10 @@ import { ScheduleData } from './schedule-card/scheduleCard.data'
 
 type scheduleTypes = {
 	weekDay: string[]
+	id: string
 }
 
-function Schedule({ weekDay }: scheduleTypes) {
+function Schedule({ weekDay, id }: scheduleTypes) {
 	const [openDays, setOpenDays] = useState<{ [key: string]: boolean }>({})
 
 	const toggleSchedule = (day: string) => {
@@ -16,7 +17,7 @@ function Schedule({ weekDay }: scheduleTypes) {
 	}
 
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} id={id}>
 			<div className={styles.title}>
 				<h1>Schedule</h1>
 				<p>

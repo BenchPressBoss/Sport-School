@@ -1,6 +1,7 @@
 import Layout from '@components/layout/Layout'
 
 import AboutUs from './about-us/AboutUs'
+import Gallery from './gallery/Gallery'
 import Main from './main/Main'
 import OurClasses from './our-classes/OutClasses'
 import Pricing from './pricing/Pricing'
@@ -20,11 +21,12 @@ function Home() {
 	return (
 		<Layout>
 			<Main />
-			<AboutUs />
-			<OurClasses />
-			<Team />
-			<Pricing />
-			<Schedule weekDay={week} />
+			<AboutUs id='about-us' />
+			<OurClasses id='our-classes' />
+			<Team id='team' />
+			<Pricing id='pricing' />
+			<Schedule weekDay={week} id='schedule' />
+			<Gallery id='gallery' />
 		</Layout>
 	)
 }

@@ -4,7 +4,7 @@ import { TeamDataItems } from './Team.data'
 import styles from './Team.module.scss'
 import TeamCard from './team-card/TeamCard'
 
-function Team() {
+function Team({ id }: { id: string }) {
 	const [isLeftSlider, setIsLeftSlider] = useState<boolean>(true)
 	const sliderContainerRef = useRef<HTMLDivElement | null>(null)
 	const slideDistance = 430
@@ -15,7 +15,7 @@ function Team() {
 		setIsLeftSlider(!isLeftSlider)
 	}
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} id={id}>
 			<h1>Meet our team members</h1>
 			<p>
 				Lintense is a team of qualified, friendly, and helpful coaches always

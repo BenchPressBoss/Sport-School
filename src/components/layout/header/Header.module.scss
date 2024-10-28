@@ -14,12 +14,23 @@ header {
 		justify-content: space-between;
 		width: 1270px;
 
-		h1 {
-			font-size: 40px;
-			color: $text-white;
+		.logo {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
 
-			> span {
-				color: $btn-orange;
+			h1 {
+				font-size: 40px;
+				color: $text-white;
+				padding: 0;
+				margin: 0;
+
+				> span {
+					color: $btn-orange;
+				}
+			}
+			p {
+				font-size: 10px;
 			}
 		}
 

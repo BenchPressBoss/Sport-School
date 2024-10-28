@@ -14,8 +14,11 @@ function TeamCard({ src, name, category }: teamCardProps) {
 			<div className={styles.imgWrapper}>
 				<img src={src} alt='trainerPhoto' className={styles.trainerPhoto} />
 				<div className={styles.socialMediaLinks}>
-					<MediaLInk icon='/icons/Twitter.svg' />
-					<MediaLInk icon='/icons/Facebook.svg' />
+					<MediaLInk icon='/icons/Twitter.svg' href='https://x.com' />
+					<MediaLInk
+						icon='/icons/Facebook.svg'
+						href='https://www.facebook.com'
+					/>
 					<MediaLInk
 						icon='/icons/Insta.svg'
 						href='https://www.instagram.com/bench_press_boss/?next=%2F'
