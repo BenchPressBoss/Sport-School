@@ -1,6 +1,51 @@
+@import '@styles/variables';
+
 header {
 	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	width: 1200px;
+	justify-content: center;
+	width: 100vw;
+	padding: 60px 0;
+	position: fixed;
+	transition: all 0.3s ease;
+	z-index: 2;
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		width: 1270px;
+
+		.logo {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+
+			h1 {
+				font-size: 40px;
+				color: $text-white;
+				padding: 0;
+				margin: 0;
+
+				> span {
+					color: $btn-orange;
+				}
+			}
+			p {
+				font-size: 10px;
+			}
+		}
+
+		nav {
+			display: flex;
+			font-size: 17px;
+			font-weight: 400;
+			gap: 30px;
+		}
+	}
+
+	&.scrolled {
+		width: 100vw;
+		position: fixed;
+		padding: 15px 0;
+		background-color: $bg-black;
+	}
 }

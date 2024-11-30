@@ -1,0 +1,9 @@
+@import '@styles/variables';
+
+.mediaLink img {
+	transition: filter 0.5s ease;
+}
+
+.mediaLink:hover img {
+	filter: brightness(0) invert(34%) sepia(54%) saturate(3476%);
+}

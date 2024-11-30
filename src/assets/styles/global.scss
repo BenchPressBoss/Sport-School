@@ -95,7 +95,9 @@ video {
 	scroll-behavior: smooth;
 	font-family: 'Roboto', sans-serif;
 }
-
+body {
+	background-color: $bg-darkblue;
+}
 ol,
 ul {
 	list-style: none;
@@ -125,4 +127,19 @@ select {
 	background: none;
 	border: none;
 	outline: none;
+}
+h1 {
+	font-size: 46px;
+	font-weight: 400;
+	color: $text-white;
+}
+h3 {
+	font-size: 25px;
+	font-weight: 400;
+	color: $text-white;
+}
+p {
+	color: $description-gray;
+	line-height: 1.5;
+	font-size: 18px;
 }

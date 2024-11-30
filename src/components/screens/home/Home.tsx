@@ -1,18 +1,32 @@
 import Layout from '@components/layout/Layout'
 
-import styles from './Home.module.scss'
+import AboutUs from './about-us/AboutUs'
+import Gallery from './gallery/Gallery'
+import Main from './main/Main'
+import OurClasses from './our-classes/OutClasses'
+import Pricing from './pricing/Pricing'
 import Schedule from './schedule/Schedule'
+import Team from './team/Team'
 
 function Home() {
-	const week = ['Monday', 'Tuesday', 'Wednesday']
+	const week = [
+		'Monday',
+		'Tuesday',
+		'Wednesday',
+		'Thursday',
+		'Friday',
+		'Saturday'
+	]
 
 	return (
 		<Layout>
-			<div className={styles.wrapper}>
-				{week.map(day => (
-					<Schedule weekDay={day} src='/icons/Plus.svg' alt='plusImg' />
-				))}
-			</div>
+			<Main />
+			<AboutUs id='about-us' />
+			<OurClasses id='our-classes' />
+			<Team id='team' />
+			<Pricing id='pricing' />
+			<Schedule weekDay={week} id='schedule' />
+			<Gallery id='gallery' />
 		</Layout>
 	)
 }

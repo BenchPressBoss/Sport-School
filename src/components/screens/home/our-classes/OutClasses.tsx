@@ -1,14 +1,28 @@
+import { OurClassesData } from './OurClasses.data'
+import styles from './OurClasses.module.scss'
 import WorkoutCard from './workout-card/WorkoutCard'
 
-function OutClasses() {
+function OurClasses({ id }: { id: string }) {
 	return (
-		<WorkoutCard
-			description='Make your muscles stronger with weight training at Lintense.'
-			title='Weight training'
-			number={1}
-			image='/img/HomeBg.jpg'
-		/>
+		<div className={styles.wrapper} id={id}>
+			<h1>Our classes</h1>
+			<p>
+				At Lintense Fitness, we offer a wide range of workouts and classes for
+				everyone. Whatever your goal is, rest assured that our coaches have what
+				you prefer.
+			</p>
+			<div className={styles.container}>
+				{OurClassesData.map(item => (
+					<WorkoutCard
+						description={item.description}
+						title={item.title}
+						number={item.number}
+						image={item.image}
+					/>
+				))}
+			</div>
+		</div>
 	)
 }
 
-export default OutClasses
+export default OurClasses

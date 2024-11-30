@@ -1,0 +1,68 @@
+@import '@styles/variables';
+@import '@styles/animations';
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 750px;
+	width: 100%;
+	background-color: $bg-black;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+		height: 470px;
+		width: 1270px;
+
+		.info {
+			display: flex;
+			align-items: start;
+			justify-content: space-between;
+			flex-direction: row;
+			width: 100%;
+		}
+
+		.moreAboutUs {
+			width: 400px;
+			height: 230px;
+
+			p {
+				margin: 5px 0 25px 0;
+			}
+		}
+		.contactUs {
+			span {
+				font-size: 25px;
+				cursor: pointer;
+				transition: $btnColorTransition;
+			}
+			span:hover {
+				color: $btn-orange;
+			}
+		}
+		.socialMedia {
+			.links {
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+			}
+		}
+
+		.rightsBlock {
+			width: 100%;
+			p {
+				width: 800px;
+
+				.title {
+					color: $btn-orange;
+				}
+				.description {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

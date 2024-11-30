@@ -1,0 +1,56 @@
+@import '@styles/variables';
+.wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 150px 0;
+	overflow: hidden;
+
+	> p {
+		width: 700px;
+		margin-top: 10px;
+		text-align: center;
+	}
+
+	.sliderContainer {
+		margin-top: 50px;
+		transition: transform 0.5s ease;
+		.sliderItems {
+			display: flex;
+			flex-direction: row;
+			gap: 50px;
+		}
+	}
+
+	.sliderButtons {
+		display: flex;
+		gap: 10px;
+
+		.leftButton,
+		.rightButton,
+		.toRightSliderButton,
+		.toLeftSliderButton {
+			cursor: pointer;
+			width: 12px;
+			height: 12px;
+			border-radius: 10px;
+			background-color: $text-white;
+			transition:
+				width 0.5s ease,
+				background-color 0.5s ease;
+		}
+
+		.toRightSliderButton,
+		.toLeftSliderButton {
+			width: 30px;
+			background-color: $btn-orange;
+		}
+
+		.leftButton,
+		.rightButton {
+			width: 15px;
+		}
+	}
+}

@@ -1,13 +1,21 @@
+import { PropsWithChildren } from 'react'
+
+import styles from './Layout.module.scss'
+import Footer from './footer/Footer'
 import Header from './header/Header'
 
-type layoutTypes = {
-	children: React.ReactNode
-}
-function Layout({ children }: layoutTypes) {
+function Layout({ children }: PropsWithChildren) {
 	return (
 		<>
 			<Header />
-			{children}
+			<div className={styles.layout}>
+				<div className={styles.wrapper}>
+					<main>{children}</main>
+				</div>
+			</div>
+			<div id='contacts'>
+				<Footer />
+			</div>
 		</>
 	)
 }

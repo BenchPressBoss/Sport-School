@@ -1,10 +1,11 @@
 @import '@styles/variables';
 
 input {
-	width: 300px;
+	width: 420px;
 	padding: 10px 15px;
 	border: 2px solid $description-gray;
 	border-radius: 500px;
 	font-size: 16px;
 	letter-spacing: 0.3px;
+	color: $text-white;
 }

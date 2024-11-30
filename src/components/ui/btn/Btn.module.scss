@@ -1,7 +1,7 @@
 @import '@styles/variables';
 @import '@styles/animations';
 
-button {
+.button {
 	padding: 10px 30px;
 	border: 2px solid $btn-orange;
 	border-radius: 500px;
@@ -14,7 +14,7 @@ button {
 	font-size: 16px;
 	letter-spacing: 0.3px;
 }
-button:hover {
+.button:hover {
 	background-position: right;
 	border-color: $text-white;
 }
